@@ -1,0 +1,10 @@
+html {
+    background: rgb(61, 61, 61);
+    color: white;
+    font-family: 'Futura', sans-serif;
+    font-weight: lighter;
+}
+
+#logo {
+    color: red;
+}

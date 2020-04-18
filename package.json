@@ -1,0 +1,22 @@
+{
+  "name": "express-crash-course",
+  "version": "1.0.0",
+  "description": "Express crash course by Brad Traversy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "Leonardo Bianconi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.7",
+    "pug": "^2.0.4",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
