@@ -1,10 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 html {
     background: rgb(61, 61, 61);
     color: white;
     font-family: 'Futura', sans-serif;
     font-weight: lighter;
+    font-stretch: wider;
+}
+
+body {
+    
+}
+
+#logo-div {
+    background-color: rgb(27, 27, 27);
+    min-height: 10wh;
+    width: 100%;
 }
 
 #logo {
     color: red;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.container {
+    margin: 2rem 10vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+.container div {
+    margin: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+form input {
+    margin: rem;
+}
+
+.action {
+    font-family: monospace;
+    font-size: larger;
+
+    margin: 1rem 0rem;
+    row-gap: 1rem;
+    width: 100%;
+    border: 1px solid white;
+    border-collapse: collapse;
+    border-radius: 1rem;
+}
+.action td {
+    border: 1px solid white;
+    padding: 1rem 3rem;
+}
+.action tr{
+    transition: 0.2s;
+}
+.action tr:hover {
+    background: rgb(175, 175, 175);
+    color: red;
+}
+
+footer {
+    min-height: 10vh;
+    text-align: center;
+    color: red;
+    font-family: monospace;
 }

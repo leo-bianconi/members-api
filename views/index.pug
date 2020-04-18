@@ -1,10 +1,13 @@
 extends template.pug
 
 block content
-    h2 Creazione utente
-    form(action="api/members" method="POST")
-        label(for="name") Name: 
-            input(type="text" name="name")
-        label(for="email") Email: 
-            input(type="email" name="email")
-        button(type="submit") Submit
+    div.container
+        
+        div.schema
+            h2 API Schema
+            p Go to 3.16.240.250/api/schema to test out the members REST API
+            table.action
+                each s, i in schema
+                    tr
+                        each value, key in s
+                            td= value

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-const URI = 'mongodb://localhost/rest-api';
+const PASSWORD = process.env.DB_PASSWORD || '1234'
+const URI = `mongodb+srv://leo:${PASSWORD}@cluster0-11sxh.mongodb.net/rest-api?retryWrites=true&w=majority`;
 const OPTIONS = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
