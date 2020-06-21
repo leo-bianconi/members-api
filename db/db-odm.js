@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 
-const USER = process.env.DB_USER
-const PASSWORD = process.env.DB_PASSWORD
-const URI = `mongodb+srv://${USER}:${PASSWORD}@cluster0-11sxh.mongodb.net/rest-api?retryWrites=true&w=majority`;
-const OPTIONS = {
+const USER = process.env.DB_USER,           // for MongoDB Atlas connection
+    PASSWORD = process.env.DB_PASSWORD,
+    DOMAIN_NAME = process.env.DB_DOMAIN_NAME,
+    URI = `mongodb+srv://${USER}:${PASSWORD}@${DOMAIN_NAME}`,
+    OPTIONS = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     family: 4
@@ -33,11 +34,12 @@ memberSchema.methods.greet = () => {
 const Member = mongoose.model('Member', memberSchema, );
 
 // Create an instance of a model
+/*
 const newMember = new Member({
     name: 'Leonardo Bianconi',
     email: 'leonardobianconi@rocketmail.com',
     status: 'active'
-});
+}); */
 
 // Save instance in the database
 //newMember.save((err, member) => {                   // callback!
